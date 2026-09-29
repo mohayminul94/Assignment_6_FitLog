@@ -1,6 +1,8 @@
 import { FitlogProvider } from "@/context/fitlogContext";
 import NavBar from "@/components/Navber";
 import "./globals.css";
+import Footer from "@/components/Footer";
+
 
 export default function RootLayout({ children }) {
   return (
@@ -9,6 +11,7 @@ export default function RootLayout({ children }) {
         <FitlogProvider>
           <NavBar />
           <main>{children}</main>
+          <Footer/>
         </FitlogProvider>
       </body>
     </html>
